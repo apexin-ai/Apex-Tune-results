@@ -1,0 +1,72 @@
+{
+  "task": "gpumode_trimul",
+  "hardware": {
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "triton": "3.3.1"
+  },
+  "metrics": {
+    "correctness_tests_passed": "18/18",
+    "headline_geomean_latency_us": 1036.0541733431592,
+    "baseline_stashuk_olek_us": 1064.9228290162391,
+    "latency_reduction_vs_baseline_pct": 2.71,
+    "speedup_vs_baseline_pct": 2.79,
+    "latency_margin_us": -28.8686556730799,
+    "evaluation_protocol": "Two-attempt paired evaluation mean (attempt 1: 1036.655 us, attempt 2: 1035.453 us)",
+    "attempts": [
+      {
+        "attempt_id": 1,
+        "geomean_latency_us": 1036.6553003651604,
+        "benchmark_latencies_us": [
+          338.54726473895875,
+          1120.1457844840156,
+          489.47808027267456,
+          550.147553284963,
+          1979.6617201396398,
+          1898.919039964676,
+          3351.481924057007
+        ]
+      },
+      {
+        "attempt_id": 2,
+        "geomean_latency_us": 1035.4530463211581,
+        "benchmark_latencies_us": [
+          338.95552039146423,
+          1119.6230597355787,
+          489.30751889944077,
+          547.0573330918947,
+          1982.3231935501099,
+          1889.4515252113342,
+          3354.0796756744385
+        ]
+      }
+    ],
+    "per_shape_mean_latencies_us": [
+      338.7513925652115,
+      1119.884422109797,
+      489.3927995860577,
+      548.6024431884288,
+      1980.992456844875,
+      1894.185277588005,
+      3352.780799865723
+    ],
+    "comparisons_us": {
+      "k_search_reported": 1030.0,
+      "our_headline_geomean": 1036.054,
+      "stashuk_olek_paired": 1064.923,
+      "shiyegao_cuda_reported": 1074.0,
+      "zeyu_shen_triton_reported": 1140.0,
+      "ttt_discover_reported": 1161.0
+    }
+  },
+  "benchmark_specs": [
+    "seqlen: 256; bs: 2; dim: 128; hiddendim: 128; nomask: True; distribution: normal",
+    "seqlen: 768; bs: 1; dim: 128; hiddendim: 128; nomask: True; distribution: cauchy",
+    "seqlen: 256; bs: 2; dim: 384; hiddendim: 128; nomask: False; distribution: normal",
+    "seqlen: 512; bs: 1; dim: 128; hiddendim: 128; nomask: True; distribution: normal",
+    "seqlen: 1024; bs: 1; dim: 128; hiddendim: 128; nomask: True; distribution: cauchy",
+    "seqlen: 768; bs: 1; dim: 384; hiddendim: 128; nomask: False; distribution: normal",
+    "seqlen: 1024; bs: 1; dim: 384; hiddendim: 128; nomask: True; distribution: normal"
+  ]
+}

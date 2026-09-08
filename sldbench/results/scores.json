@@ -1,0 +1,41 @@
+{
+  "benchmark": "pkuHaowei/sldbench",
+  "dataset_revision": "721b846056f031737ff7fa72572c021324e3ec0e",
+  "metric": "Combined Score = 1 - mean(NMSE_per_dim)",
+  "subtasks": {
+    "parallel": {
+      "baseline": 0.985,
+      "discovered": 0.9999891170971098,
+      "relative_gain_pct": 1.52,
+      "parameters": 4,
+      "description": "Four-parameter product form in log-space with global boundary calibration"
+    },
+    "domain_mixture": {
+      "baseline": 0.989,
+      "discovered": 0.9973788599692002,
+      "relative_gain_pct": 0.85,
+      "parameters": 35,
+      "description": "Five-domain joint fit with per-domain standard-deviation residual weighting"
+    },
+    "lr_bsz": {
+      "baseline": 0.938,
+      "discovered": 0.9649515798828776,
+      "relative_gain_pct": 2.87,
+      "description": "Log-space monomial mixture with stable log-sum-exp and residual surface"
+    },
+    "easy_question": {
+      "task_name": "u_shaped_compute_scaling",
+      "baseline": 0.533,
+      "discovered": 0.5760748673298086,
+      "relative_gain_pct": 8.08,
+      "parameters": 6,
+      "description": "Decomposition into persistent scaling trend + transient regime effect with onset, duration, and decay"
+    }
+  },
+  "overall": {
+    "baseline_suite_mean": 0.86125,
+    "discovered_suite_mean": 0.884598606069749,
+    "absolute_gain": 0.023348606069749,
+    "relative_gain_pct": 2.711
+  }
+}

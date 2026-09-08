@@ -1,0 +1,15 @@
+label,seed,val_bpb,steps,tokens_M
+fused_lookup_solution,42,0.891762,3301,486.8
+fused_lookup_solution,137,0.892828,3305,487.3
+fused_lookup_solution,271,0.892688,3302,486.9
+fused_lookup_solution,314,0.892595,3327,490.6
+fused_lookup_solution,589,0.892638,3331,491.2
+fused_lookup_solution,733,0.894539,3305,487.3
+fused_lookup_solution,997,0.893019,3282,484.0
+fused_lookup_solution,1231,0.893141,3274,482.8
+fused_lookup_solution,1667,0.892877,3312,488.4
+fused_lookup_solution,2021,0.891835,3325,490.3
+recursive_superintelligence,mean,0.910875,,
+recursive_superintelligence,best,0.903891,,
+tencent_hunyuan_hyra,mean,0.901543,,
+autotrust_scienceguru,mean,0.889522,,

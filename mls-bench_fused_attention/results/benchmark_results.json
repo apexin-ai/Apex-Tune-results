@@ -1,0 +1,52 @@
+{
+  "task": "mls_fused_attention",
+  "hardware": {
+    "gpu": "NVIDIA H100 SXM 80GB",
+    "torch": "2.6.0",
+    "triton": "3.2.0",
+    "cuda": "12.4"
+  },
+  "metrics": {
+    "d64": {
+      "batch": 4,
+      "seqlen": 4096,
+      "nheads": 32,
+      "headdim": 64,
+      "baseline_tflops": 338.626,
+      "discovered_tflops": 430.7,
+      "speedup_vs_baseline_pct": 27.18,
+      "rescale_free_softmax_throughput_gain_pct": 21.0,
+      "correct": true,
+      "max_diff": 0.00195
+    },
+    "d128": {
+      "batch": 2,
+      "seqlen": 8192,
+      "nheads": 16,
+      "headdim": 128,
+      "baseline_tflops": 405.09,
+      "discovered_tflops": 468.4,
+      "speedup_vs_baseline_pct": 15.63,
+      "rescale_free_softmax_throughput_gain_pct": 8.5,
+      "correct": true,
+      "max_diff": 0.00195
+    },
+    "d256": {
+      "batch": 1,
+      "seqlen": 16384,
+      "nheads": 8,
+      "headdim": 256,
+      "baseline_tflops": 385.713,
+      "discovered_tflops": 451.7,
+      "speedup_vs_baseline_pct": 17.11,
+      "rescale_free_softmax_throughput_gain_pct": 19.3,
+      "correct": true,
+      "max_diff": 0.00195
+    }
+  },
+  "overall": {
+    "correctness": "3/3 shapes passed",
+    "max_numerical_diff": 0.00195,
+    "correctness_threshold": 0.01
+  }
+}

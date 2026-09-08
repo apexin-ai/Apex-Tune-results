@@ -1,0 +1,48 @@
+Apex-Tune-results
+Copyright 2026 Apex Intelligence
+
+The code in this repository is licensed under the Apache License, Version 2.0
+(see LICENSE).
+
+It includes third-party components whose original copyright and permission
+notices are preserved alongside the derived code:
+
+1. nanochat_autoresearch/
+   - Derived from karpathy/nanochat (https://github.com/karpathy/nanochat)
+     Copyright (c) 2025 Andrej Karpathy
+     Licensed under the MIT License. See nanochat_autoresearch/LICENSE-nanochat.
+   - Evaluated under the Autoresearch evaluation methodology originated by
+     Recursive SuperIntelligence (https://www.recursive-ai.com/)
+     Licensed under the Apache License, Version 2.0.
+
+2. mls-bench_fused_attention/
+   - Derived from MLS-Bench (Machine Learning Systems Benchmark)
+     (https://github.com/Imbernoulli/MLS-Bench, https://arxiv.org/abs/2605.08678)
+     Copyright (c) 2025-2026 MLS-Bench Contributors
+     Licensed under the Apache License, Version 2.0.
+   - Reference attention baseline adapted from PyTorch (torch.nn.functional.scaled_dot_product_attention)
+     Copyright (c) 2016-present PyTorch contributors
+     Licensed under the BSD 3-Clause License.
+   - Kernel implementations build on OpenAI Triton programming abstractions
+     Copyright (c) 2021-present OpenAI / Triton contributors
+     Licensed under the MIT License.
+
+3. sldbench/
+   - Derived from pkuHaowei/sldbench (https://huggingface.co/datasets/pkuHaowei/sldbench)
+     Copyright (c) 2025-2026 Peking University & SLDBench Contributors
+     Licensed under the Apache License, Version 2.0.
+   - Incorporates benchmark evaluation protocols from SimpleTES
+     "SimpleTES: Toward Automated Discovery of Scaling Laws" (arXiv:2604.19341).
+
+4. gpumode_trimul/
+   - Derived from GPUMode Popcorn harness and TriMul benchmark
+     (https://github.com/gpu-mode)
+     Copyright (c) 2024-2026 GPUMode Community & Popcorn Contributors
+     Licensed under the Apache License, Version 2.0 / MIT License.
+   - Formulates the outgoing Triangle Multiplicative Update introduced in AlphaFold
+     Copyright (c) 2021 DeepMind Technologies Limited (Jumper et al., Nature 2021)
+     Licensed under the Apache License, Version 2.0.
+   - Incorporates benchmark contract and evaluation harness adapted from TTT-Discover
+     (https://github.com/test-time-training/discover)
+     Copyright (c) 2025-2026 Stanford University, NVIDIA, Together AI
+     Licensed under the Apache License, Version 2.0.

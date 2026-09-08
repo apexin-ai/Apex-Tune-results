@@ -1,0 +1,17 @@
+{
+  "dataset_revision": "721b846056f031737ff7fa72572c021324e3ec0e",
+  "subtasks": [
+    "domain_mixture_scaling_law",
+    "easy_question_scaling_law",
+    "lr_bsz_scaling_law",
+    "parallel_scaling_law"
+  ],
+  "prepare_commands": [
+    {
+      "command": ["python", "prepare_dataset.py"],
+      "cwd": ".",
+      "description": "Pre-fetch the four pinned pkuHaowei/sldbench subsets into the local HF cache"
+    }
+  ],
+  "required_files": [".sldbench_cached"]
+}
